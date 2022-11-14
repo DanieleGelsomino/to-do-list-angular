@@ -1,0 +1,16 @@
+<!--- TO-DO ITEM CHECK + TITLE --->
+<li class="d-flex justify-content-between align-items-center mb-3">
+  <div class="d-flex">
+    <input [checked]="!todo.isNotCompleted" type="checkbox" name="checkbox" (click)="onToggle(todo)" class="me-5">
+    <div class="{{(!todo.isNotCompleted)? 'done' : ''}} " (click)="onToggle(todo)">
+      <strong class="text-capitalize">{{todo.title}}</strong>
+    </div>
+  </div>
+  <!-- DELETE BTN -->
+  <div class="d-flex justify-content-end">
+    <button class="round" mat-mini-fab color="primary" aria-label="Example icon button with a delete icon"
+      (click)="onDelete(todo)">
+      <mat-icon class="dg-size">delete</mat-icon>
+    </button>
+  </div>
+</li>

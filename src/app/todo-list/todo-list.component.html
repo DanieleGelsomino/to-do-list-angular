@@ -1,0 +1,23 @@
+<div class="container pt-3">
+  <div class="d-flex justify-content-center flex-column align-items-center">
+    <div class="col-6">
+      <!-- INPUT + ADD BTN -->
+      <app-todo-add-todo (addTodo)="addTodo($event)"></app-todo-add-todo>
+      <!-- to-do-list -->
+      <ul class="mt-5 mb-5 todo-list">
+        <!-- TO-DO ITEM -->
+        <app-todo-item *ngFor="let todo of todos; index as i" [todo]="todo" (deleteTodo)="deleteTodo($event)">
+        </app-todo-item>
+        <h3 *ngIf="!this.todos.length" class="pt-3 dg-azure text-center">La tua lista è vuota!</h3>
+      </ul>
+    </div>
+  </div>
+  <!-- DELETE ALL BTN -->
+  <div class="d-flex justify-content-center">
+    <button *ngIf="this.todos.length" class="dg-deleteall-btn d-flex align-items-center"
+      aria-label="Example icon button with a delete icon" (click)="deleteAllTodo()">Elimina
+      tutto
+      <mat-icon class="dg-icon-delete">delete</mat-icon>
+    </button>
+  </div>
+</div>

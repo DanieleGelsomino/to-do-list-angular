@@ -1,0 +1,6 @@
+<!-- INPUT TEXT + ADD BTN -->
+<form class="input-group mb-3 mt-3" (ngSubmit)="onSubmit()">
+  <input [(ngModel)]="title" name="todo" type="text" maxlength="50" class="form-control"
+    placeholder="Aggiungi qualcosa alla tua lista...">
+  <button class="btn dg-btn" id="button-addon2" (keyup.enter)="onSubmit()" (click)="onSubmit()">Aggiungi</button>
+</form>

@@ -1,0 +1,40 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+
+
+li, input {
+  cursor: pointer;
+}
+
+.dg-btn {
+  background-color: #61A8CE;
+  color: #fff;
+  &:hover{
+    background-color: #9ccae2;
+    color: #fff;
+  }
+}
+
+
+.done{
+  text-decoration: line-through;
+  color: rgb(214, 2, 2) !important;
+}
+
+
+
+.round{
+  border-radius: 50%;
+  background-color: rgb(210, 86, 86);
+  transition: all 0.2s ease-in-out;
+  &:hover{
+    transform: scale(1.1);
+    background-color: rgb(200, 30, 30);
+  }
+
+}
+
+.dg-size{
+  font-size: 1.3rem;
+}
+
+

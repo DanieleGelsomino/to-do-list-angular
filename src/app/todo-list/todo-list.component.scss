@@ -1,0 +1,33 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+
+.dg-deleteall-btn{
+  background-color: rgb(210, 86, 86);
+  border-radius: 25px;
+  padding: 5px 12px;
+  border: 0px;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+  &:hover{
+    transform: scale(1.1);
+    background-color: rgb(200, 30, 30);
+  }
+
+}
+
+
+.todo-list{
+  max-height: 300px !important;
+  overflow-y: auto !important;
+  background-color: rgba(0, 0, 0, 0.105);
+  border-radius: 20px;
+  padding: 30px;
+  -webkit-box-shadow: 1.5px 8px 16px 1px #ccc;
+  -moz-box-shadow: 1.5px 8px 16px 1px #ccc;
+  box-shadow: 1.5px 8px 16px 1px #ccc;
+}
+
+.dg-azure{
+  color: #61A8CE;
+  }
